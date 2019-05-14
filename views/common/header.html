@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://www.laurainthekitchen.com/ -->
+<html style="transform: none;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{.Title}}</title>
+
+
+    <!-- Meta tags -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="http://www.laurainthekitchen.com/favicon.ico">
+    <link rel="icon" type="image/png" href="http://www.laurainthekitchen.com/favicon.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/bootstrap/css/app.v1.css">
+    <link rel="stylesheet" href="/static/js/normalize.css">
+    <link rel="stylesheet" href="/static/js/typography.css">
+    <link rel="stylesheet" href="/static/js/fontawesome.css">
+    <link rel="stylesheet" href="/static/js/style.css">
+    <link rel="stylesheet" href="/static/js/colors.css">
+    <link rel="stylesheet" href="/static/js/chosen.css">
+    <link rel="stylesheet" href="/static/js/swiper.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" media="(max-width:767px)" href="/static/js/0-responsive.css">
+    <link rel="stylesheet" media="(min-width:768px) and (max-width:1024px)" href="/static/js/768-responsive.css">
+    <link rel="stylesheet" media="(min-width:1025px) and (max-width:1199px)" href="/static/js/1025-responsive.css">
+    <link rel="stylesheet" media="(min-width:1200px)" href="/static/js/1200-responsive.css">
+    <!-- Google Fonts -->
+    <script src="/static/js/osd.js"></script>
+    <script src="/static/js/ca-pub-2454219107747983.js"></script>
+    <script async="" src="/static/js/analytics.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-30726050-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2454219107747983",
+            enable_page_level_ads: true
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/static/js/cookieconsent.min.css">
+    {{/*    <link rel="preload" href="http://pagead2.googlesyndication.com/pagead/js/r20190429/r20190131/show_ads_impl.js"*/}}
+    {{/*          as="script">*/}}
+    <style id="fit-vids-style">.fluid-width-video-wrapper {
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+
+        .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }</style>
+    <style>.theiaStickySidebar:after {
+            content: "";
+            display: table;
+            clear: both;
+        }</style>
+    <style></style>
+</head>
+<body style="transform: none;">
+
+
+<!-- Wrapper -->
+<div id="cs-wrapper" class="wide" style="transform: none;">
+
+    <!-- Header -->
+    <header id="cs-header-style-one">
+        <!-- Header main -->
+        <div id="cs-header-main">
+            <div class="cs-container">
+                <div class="cs-header-body-table">
+                    <div class="cs-header-body-row">
+                        <!-- Logo brand image -->
+                        <div id="cs-logo-brand">
+                            <a href="http://www.laurainthekitchen.com/index.html"><img width="154px" height="63px" src="/static/js/logo.png"
+                                                                                       alt="Laura in the Kitchen"></a>
+                        </div><!-- end .cs-logo-brand -->
+                        <!-- Toggle button for menu -->
+                        <div class="cs-toggle-main-navigation">
+                            <i class="fa fa-bars"></i>
+                        </div><!-- end .cs-toggle-main-navigation -->
+                        <!-- Main navigation -->
+                        <div class="cs-menu-parent" style="height: 0px;">
+                            <div class="cs-main-navigation-wrapper cs-menu-is-sticky" rel="3">
+                                <div id="cs-div-navigation">
+                                    <nav id="cs-main-navigation" class="cs-clearfix">
+                                        <ul class="cs-main-navigation cs-clearfix">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="#search"><b><i
+                                                                class="fa fa-search"></i> Search Recipes</b></a>
+                                            </li>
+                                            <li><a href="http://www.laurainthekitchen.com/#"><span>Categories</span></a>
+                                                <ul class="sub-menu">
+                                                    {{range $k, $v := .Header.CategoryList}}
+                                                        {{if eq $v.Name "Holidays"}}
+                                                            <li>
+                                                            <a href="#"><span>{{$v.Name}}</span></a>
+                                                            <ul class="sub-menu">
+                                                        {{else if eq $v.Name "Thanksgiving"}}
+                                                            <li>
+                                                                <a href="/search/category?category={{$v.Id}}">{{$v.Name}}</a>
+                                                            </li>
+                                                            </ul>
+                                                            </li>
+                                                        {{else if eq $v.Name "Meats"}}
+                                                            <li>
+                                                            <a href="#"><span>{{$v.Name}}</span></a>
+                                                            <ul class="sub-menu">
+                                                        {{else if eq $v.Name "Pork"}}
+                                                            <li>
+                                                                <a href="/search/category?category={{$v.Id}}">{{$v.Name}}</a>
+                                                            </li>
+                                                            </ul>
+                                                            </li>
+                                                        {{else}}
+                                                            <li>
+                                                                <a href="/search/category?category={{$v.Id}}">{{$v.Name}}</a>
+                                                            </li>
+                                                        {{end}}
+
+                                                    {{end}}
+                                                </ul>
+                                            </li>
+                                            <li><a href="/search/top">Top</a></li>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end .cs-header-main -->
+    </header><!-- end .cs-header-style-one -->

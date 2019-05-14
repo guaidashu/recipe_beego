@@ -1,0 +1,102 @@
+<!-- Footer -->
+<footer id="cs-footer">
+    <div class="cs-search-recipes-container" >
+        <a name="search"></a>
+        <div class="cs-container">
+            <div class="cs-row">
+                <form name="searchForm" action="/search/search" method="get">
+                    <div class="cs-col cs-col-3-of-12">
+                        <input name="search" style="height: 100%;" type="text" placeholder="Enter Recipe Title Keywords...">
+                    </div>
+
+                    <div class="cs-col cs-col-3-of-12">
+                        <input type="submit" value="Search" class="cs-btn cs-btn-large">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- end .cs-search-recipes-container -->
+    <div class="cs-container">
+        <div class="cs-row">
+            <div class="cs-col cs-col-4-of-12">
+                <!-- Widget latest recipes -->
+                <aside class="widget">
+                    <h2 class="widget-title"><span>Latest recipes</span></h2>
+                    <div class="cs-widget_latest_posts">
+                        <!-- Post item -->
+                        {{range .Header.LastNewRecipe}}
+                        <div class="cs-post-item">
+                            <div class="cs-post-thumb">
+                                <a href="/play/play?id={{.Id}}"><img
+                                            src="https://s3-us-west-1.amazonaws.com/static-soource/recipe/images/small/{{.Id}}.jpg"
+                                            alt="{{.Name}}"></a>
+                            </div>
+                            <div class="cs-post-inner">
+                                <h3>
+                                    <a href="/play/play?id={{.Id}}">{{.Name}}</a></h3>
+                                <div class="cs-post-meta">
+                                    <span><i class="fa fa-eye"></i>{{.PageViews}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {{end}}
+                        <!-- Post item -->
+                    </div>
+                </aside>
+            </div>
+            <div class="cs-col cs-col-4-of-12">
+                <aside class="widget widget_categories">
+                    <h2 class="widget-title"><span>Popular categories</span></h2>
+                    <ul>
+                        <li>
+                            <a href="/search/category?category=4">Desserts</a>
+                        </li>
+                        <li>
+                            <a href="/search/category?category=3">Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="/search/category?category=11">Appetizers</a>
+                        </li>
+                        <li>
+                            <a href="/search/category?category=19">Chicken</a>
+                        </li>
+                        <li><a href="/search/category?category=13">Sides</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Copyright -->
+<div id="cs-copyright">
+    <div class="cs-container">
+        © Copyright 2017-2018. All rights reserved.
+    </div>
+</div>
+
+</div>
+
+<!-- Javascripts -->
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/jquery-ui.js"></script>
+<script src="/static/js/jquery-easing.js"></script>
+<script src="/static/js/jquery-fitvids.js"></script>
+<script src="/static/js/jquery-chosen.js"></script>
+<script src="/static/js/jquery-sticky.js"></script>
+<script src="/static/js/jquery-magnific.js"></script>
+<script src="/static/js/jquery-countdown.js"></script>
+<script src="/static/js/jquery-swiper.js"></script>
+<script src="/static/js/jquery-isotope.js"></script>
+<script src="/static/js/jquery-init.js"></script>
+<script>
+
+    function gotoPage(url) {
+        window.location = url;
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+/*------------------------------------------------------------------
+
+@Author: CodeoStudio
+@URL:    http://codeostudio.hr/
+
+-------------------------------------------------------------------*/
+
+.cs-container {
+    padding-left: 15px;
+    padding-right: 15px
+}
+.cs-col {
+    width: 100%
+}
+
+/*------------------------------------------------------------------
+    Main content
+-------------------------------------------------------------------*/
+.cs-main-content,
+.cs-main-content.cs-sidebar-on-the-left,
+.cs-main-content.cs-sidebar-on-the-right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0
+}
+.cs-main-sidebar {
+    width: 100%
+}
+
+/*------------------------------------------------------------------
+    Header main
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Logo brand
+-------------------------------------------------------------------*/
+#cs-logo-brand img {
+    height: 50px
+}
+#cs-header-style-one #cs-logo-brand,
+#cs-header-style-two #cs-logo-brand {
+    padding: 15px 20px 15px 0;
+    height: 80px;
+    display: inline-block;
+    text-align: left;
+    margin: 0
+}
+
+/*------------------------------------------------------------------
+    Main navigation
+-------------------------------------------------------------------*/
+.cs-menu-parent {
+    height: auto !important
+}
+.cs-main-navigation-wrapper.fixed {
+    position: static !important;
+    box-shadow: none !important
+}
+.cs-main-navigation-wrapper:before,
+.cs-main-navigation-wrapper:after {
+    content: " ";
+    display: table
+}
+.cs-main-navigation-wrapper:after {
+    clear: both
+}
+nav#cs-main-navigation {
+    display: none;
+    clear: both;
+    width: 100%
+}
+#cs-main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+nav#cs-main-navigation a {
+    color: #333 !important
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu {
+    background-color: #fff
+}
+#cs-main-navigation .cs-main-navigation > li > a {
+    font-size: 14px;
+    display: block;
+    padding: 8px 0px;
+    border-bottom: 1px solid #f5f5f5;
+    color: #999;
+    font-weight: 700
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu li a {
+    display: block;
+    padding: 5px 0;
+    padding-left: 15px;
+    border-bottom: 1px solid #f5f5f5;
+    color: #999
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu ul li a {
+    padding-left: 30px
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu ul ul li a {
+    padding-left: 45px
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu ul ul ul li a {
+    padding-left: 60px
+}
+
+/*------------------------------------------------------------------
+    Home slider
+-------------------------------------------------------------------*/
+.cs-home-slider .cs-slider-caption {
+    padding: 15px 30px 17px 30px;
+    max-width: 100%
+}
+.cs-home-slider .cs-slider-caption h2 {
+    font-size: 18px;
+    line-height: 38px;
+}
+.cs-home-slider .cs-slider-caption p {
+    display: none;
+}
+.cs-home-slider .cs-slider-caption .cs-btn {
+    display: none;
+}
+
+/*------------------------------------------------------------------
+    Home regular slider
+-------------------------------------------------------------------*/
+.cs-home-regular-slider .cs-slider-caption h2 {
+    font-size: 18px;
+    line-height: 28px
+}
+
+/*------------------------------------------------------------------
+    Recipes
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Category recipes
+-------------------------------------------------------------------*/
+.cs-recipes-category ul.cs-recipes li.cs-recipe {
+	clear: both;
+	width: 100%;
+	display: block;
+	margin-right: 0
+}
+
+/*------------------------------------------------------------------
+    Isotope recipes
+-------------------------------------------------------------------*/
+.cs-isotope-recipes {
+    margin: 0
+}
+.cs-recipes-category ul.cs-isotope-recipes li.cs-isotope-recipe {
+    width: 100%;
+    padding: 0
+}
+
+/*------------------------------------------------------------------
+    Single recipe
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Layout 1
+-------------------------------------------------------------------*/
+/* Preparation */
+.cs-recipe-single-preparation .step .step-thumb {
+    float: left;
+    margin: 0 0 10px 0;
+    width: 100%
+}
+.cs-recipe-single-preparation .step .step-description {
+    overflow: visible;
+}
+
+
+/*------------------------------------------------------------------
+    Pages
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Under construction
+-------------------------------------------------------------------*/
+.cs-countdown-block {
+    margin: 0 10px 20px 10px
+}
+.cs-countdown-number {
+    font-size: 30px;
+    line-height: 10px
+}
+.cs-countdown-label {
+    font-size: 12px;
+    letter-spacing: 1px
+}
+
+/*------------------------------------------------------------------
+    Blog
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Category
+-------------------------------------------------------------------*/
+header.cs-post-header h1,
+header.cs-post-header h2 {
+    font-size: 20px;
+    line-height: 28px
+}
+
+/*------------------------------------------------------------------
+    Related articles
+-------------------------------------------------------------------*/
+.cs-related-articles {
+    margin-left: 0;
+    margin-right: 0
+}
+.cs-related-articles > h3 {
+    padding-left: 0
+}
+.cs-related-articles .cs-post {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px
+}

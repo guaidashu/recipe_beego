@@ -1,0 +1,45 @@
+
+    <!-- Page title -->
+    <div class="cs-page-title">
+        <div class="cs-container">
+            <h1>{{.RecipeCategory.Name}} recipes</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li>{{.RecipeCategory.Name}} recipes</li>                    </ul>
+        </div>
+    </div><!-- end .cs-page-title -->
+
+    <!-- Main content and sidebar -->
+    <div class="cs-container">
+        <!-- Main content -->
+        <div class="cs-main-content cs-sidebar-on-the-right">
+            <!-- Recipes category -->
+            <div class="cs-recipes-category three-recipes">
+                <ul class="cs-recipes">
+                    <!-- Recipe -->
+                    {{template "common/item/recipe_category.html" .}}
+                    <!-- end .cs-recipe -->
+                </ul>
+            </div><!-- end .cs-recipes-category -->
+            <!-- Pagination -->
+            <ul class="pagination" id="pagination">
+            </ul>
+        </div><!-- end .cs-main-content -->
+        <!-- Sidebar -->
+    </div><!-- end .cs-container -->
+
+    <script type="text/javascript" src="/static/bootstrap/lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/build/bootstrap-paginator.min.js"></script>
+
+    <script>
+        $("#pagination").bootstrapPaginator({
+            currentPage: '{{.Page.PageNo}}',
+            totalPages: '{{.Page.TotalPage}}',
+            bootstrapMajorVersion: 3,
+            size: "small",
+            onPageClicked: function (e, originalEvent, type, page) {
+                window.location.href = "/search/{{.SearchType}}?{{.SearchType}}={{.RecipeCategory.Id}}&page=" + page
+            }
+        });
+    </script>

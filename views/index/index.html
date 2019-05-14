@@ -1,0 +1,147 @@
+
+    <!-- Home slider -->
+    <div class="cs-home-slider">
+        <div style="max-height: 150px; padding-bottom: 5px;">
+            <center>
+                <script async="" src="/static/js/f(4).txt"></script>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </center>
+        </div>
+        <div class="cs-container">
+            <!-- Home gallery --><br>
+            <div class="swiper-container swiper-container-horizontal swiper-container-autoheight" style="cursor: grab;">
+                <div class="swiper-wrapper" style="height: 600px;">
+                    <!-- Slide -->
+                    <!-- Slide -->
+                    <!-- Slide -->
+                    <div class="swiper-slide swiper-slide-active" style="width: 1024px;">
+                        <div class="cs-slider-caption">
+                            <h2>One Pot Chicken Parm Pasta</h2>
+                            <p></p>
+                            <a id="myLink"
+                               onclick="gotoPage(&#39;/play/play?id=1&#39;);return false;"
+                               class="cs-btn cs-btn-green">Go to recipe</a>
+                        </div>
+                        <a href="/play/play?id=1"><img
+                                    src="https://s3-us-west-1.amazonaws.com/static-soource/recipe/images/large/1.jpg"
+                                    alt="One Pot Chicken Parm Pasta"></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 1024px;">
+                        <a target="_blank"
+                           href="/play/play?id=19"><img
+                                    src="https://s3-us-west-1.amazonaws.com/static-soource/recipe/images/large/19.jpg" alt="Breakfast Pizza"></a>
+                    </div>
+
+                    <!-- Slide -->
+                    <div class="swiper-slide" style="width: 1024px;">
+                        <div class="cs-slider-caption">
+                            <h2>Garlic and Brown Sugar Pork Chops</h2>
+                            <p></p>
+{{/*                            <p>If you're craving something light and wholesome, noodle bowls are just the thing!</p>*/}}
+                            <a id="myLink"
+                               onclick="gotoPage(&#39;/play/play?id=7&#39;);return false;"
+                               class="cs-btn cs-btn-green">View recipe</a>
+                        </div>
+                        <img src="https://s3-us-west-1.amazonaws.com/static-soource/recipe/images/large/7.jpg" alt="Garlic and Brown Sugar Pork Chops">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide" style="width: 1024px;">
+                        <div class="cs-slider-caption">
+                            <h2>Mini Pavlovas</h2>
+                            <p></p>
+{{/*                            <p>I did it, I'm sorry, but I did. Deal with it. Gooey buttercake, there's nothing else like*/}}
+{{/*                                it.</p>*/}}
+                            <a id="myLink"
+                               onclick="gotoPage(&#39;/play/play?id=8&#39;);return false;"
+                               class="cs-btn cs-btn-green">View recipe</a>
+                        </div>
+                        <img src="https://s3-us-west-1.amazonaws.com/static-soource/recipe/images/large/8.jpg" alt="Mini Pavlovas">
+                    </div>
+                </div>
+                <!-- Swiper gallery cont
+                rols -->
+                <div class="cs-swiper-gallery-controls">
+                    <div class="cs-swiper-button-prev swiper-button-disabled"><i class="fa fa-angle-left"></i></div>
+                    <div class="cs-swiper-button-next"><i class="fa fa-angle-right"></i></div>
+                </div>
+            </div>w
+        </div>
+    </div>
+
+
+    <!-- Main content -->
+    <div class="cs-container" style="transform: none;">
+        <!-- Main content -->
+        <div class="cs-main-content cs-sidebar-on-the-right">
+            <!-- Recipes category -->
+            <h3 class="cs-headline"><span>Newest recipes (<a
+                            href="#search"><i class="fa fa-search"></i> Search</a>)</span>
+            </h3>
+            <div class="cs-recipes-category four-recipes">
+                <ul class="cs-recipes">
+                    <!-- Recipe -->
+                    {{template "common/item/recipe.html" .}}
+                    <!-- end .cs-recipe -->
+                </ul>
+            </div>
+            <ul class="page-numbers">
+                <li><a class="page-numbers" href="/search/search?search=">See
+                        More</a></li>
+            </ul>
+            <!-- Recipes category -->
+            <h3 class="cs-headline"><span>Desserts (<a
+                            href="/search/category?category=4">See all</a>)</span>
+            </h3>
+            <div class="cs-recipes-category four-recipes">
+                <ul class="cs-recipes">
+                    {{template "common/item/recipe_desserts.html" .}}
+                    <!-- Recipe -->
+                    <!-- end .cs-recipe -->
+                </ul>
+            </div>
+            <!-- Recipes category -->
+            <h3 class="cs-headline"><span>Entrees (<a
+                            href="/search/category?category=12">See all</a>)</span>
+            </h3>
+            <div class="cs-recipes-category four-recipes">
+                <ul class="cs-recipes">
+                    {{template "common/item/recipe_entrees.html" .}}
+                    <!-- end .cs-recipe -->
+                </ul>
+            </div>
+            <!-- Recipes category -->
+            <h3 class="cs-headline"><span>Sides (<a
+                            href="/search/category?category=13">See all</a>)</span>
+            </h3>
+            <div class="cs-recipes-category four-recipes">
+                <ul class="cs-recipes">
+                    <!-- Recipe -->
+                    {{template "common/item/recipe_sides.html" .}}
+                </ul>
+            </div>
+            <ul class="page-numbers">
+                <li><a class="page-numbers" href="/search/category?category=13">See
+                        More</a></li>
+            </ul>
+        </div>
+        <!-- Sidebar -->
+        <div class="cs-main-sidebar cs-sticky-sidebar"
+             style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+            <!-- Widget recipe categories -->
+
+
+            <div class="theiaStickySidebar"
+                 style="padding-top: 0px; padding-bottom: 1px; position: static; top: 10px; left: 924.797px;">
+                <aside class="widget">
+
+                </aside>
+                <aside class="widget">
+
+                </aside>
+            </div>
+        </div><!-- end .cs-main-sidebar -->
+    </div>
+
+

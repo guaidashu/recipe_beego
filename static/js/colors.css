@@ -1,0 +1,61 @@
+/*------------------------------------------------------------------
+
+@Author: CodeoStudio
+@URL:    http://codeostudio.hr/
+
+[Table of contents]
+
+1.	Background
+2.	Color
+3.	Border
+
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    1. Background
+-------------------------------------------------------------------*/
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-multi .chosen-choices li.search-choice,
+.cs-btn.cs-btn-with-icon i,
+#cs-main-navigation .cs-main-navigation ul.sub-menu,
+.cs-ingredients-check-list ul li.active .check-box,
+.cs-tab-group .ui-tabs-nav li.ui-tabs-active,
+.cs-accordion-group .cs-accordion-title.ui-state-active,
+.widget_tag_cloud .tagcloud a:hover,
+#cs-footer .widget_tag_cloud .tagcloud a:hover,
+.cs-recipe-category-block .inner .open-recipe-category,
+.cs-recipe-single-preparation .step .step-number,
+.cs-reply:hover {
+	background-color: #71a866
+}
+
+/*------------------------------------------------------------------
+    2. Color
+-------------------------------------------------------------------*/
+a,
+#cs-main-navigation .cs-main-navigation > li.current-menu-item > a,
+#cs-main-navigation .cs-main-navigation > li:hover > a,
+.cs-recipe-single-preparation .step .step-description h3 span,
+.cs-recipe-details div span,
+.cs-recipe-meta span i,
+.cs-countdown-number,
+.cs-404-page h3,
+blockquote.alt i,
+blockquote footer strong,
+.cs-post-meta span:before {
+	color: #71a866
+}
+
+
+/*------------------------------------------------------------------
+    3. Border
+-------------------------------------------------------------------*/
+#cs-header-style-one,
+#cs-header-style-two,
+blockquote,
+.cs-home-slider .cs-slider-caption h2,
+.cs-recipes-category ul.cs-recipes li.cs-recipe .cs-recipe-image .cs-recipe-details-button a,
+.cs-recipes-category ul.cs-isotope-recipes li.cs-isotope-recipe .cs-recipe-image .cs-recipe-details-button a {
+	border-color: #71a866
+}

@@ -1,0 +1,24 @@
+{{range $k, $v := .RecipeList}}
+    {{if eq (mod $k 4) 0}}
+        <li class="cs-recipe first">
+    {{else if eq (mod $k 4) 3}}
+        <li class="cs-recipe last">
+    {{else}}
+        <li class="cs-recipe">
+    {{end}}
+    <div class="cs-recipe-image">
+        <div class="cs-recipe-details-button">
+            <a href="/play/play?id={{.Id}}">Watch
+                Now</a>
+        </div>
+        <a href="/play/play?id={{.Id}}"><img
+                    src="{{$.ImgPrefix}}{{$v.Id}}.jpg"
+                    alt="{{$v.Name}}"></a>
+    </div>
+    <div class="cs-recipe-meta">
+
+        <span><i class="fa fa-cutlery"></i>{{$v.Introduce}}</span> <span><i class="fa fa-eye"></i> {{$v.PageViews}} Plays</span>
+    </div>
+    <h3><a href="/play/play?id={{.Id}}">{{$v.Name}}</a></h3>
+    </li>
+{{end}}

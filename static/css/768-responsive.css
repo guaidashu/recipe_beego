@@ -1,0 +1,141 @@
+/*------------------------------------------------------------------
+
+@Author: CodeoStudio
+@URL:    http://codeostudio.hr/
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+	Wrapper
+-------------------------------------------------------------------*/
+#cs-wrapper.boxed {
+	width: 780px
+}
+.cs-container {
+	width: 730px
+}
+.cs-col {
+    float: left
+}
+
+/*------------------------------------------------------------------
+    Main navigation
+-------------------------------------------------------------------*/
+#cs-header-style-one nav#cs-main-navigation,
+#cs-header-style-two nav#cs-main-navigation {
+    display: block !important;
+}
+#cs-header-style-one #cs-div-navigation {
+    float: right;
+}
+#cs-header-style-two #cs-div-navigation {
+    display: table;
+    margin: 0 auto
+}
+#cs-header-style-one .cs-main-navigation-wrapper.fixed #cs-div-navigation {
+    width: 730px;
+    margin: 0 auto;
+    float: none;
+}
+#cs-main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+#cs-main-navigation .cs-main-navigation > li {
+    display: inline-block;
+}
+#cs-main-navigation .cs-main-navigation > li > a {
+    padding: 0px 4px;
+    position: relative;
+    display: block;
+    font-size: 13px;
+    color: #333
+}
+#cs-header-style-one #cs-main-navigation .cs-main-navigation > li > a {
+    line-height: 140px
+}
+#cs-header-style-one .cs-main-navigation-wrapper.fixed #cs-main-navigation .cs-main-navigation > li > a {
+    line-height: 60px
+}
+#cs-header-style-two #cs-main-navigation .cs-main-navigation > li > a {
+    line-height: 60px
+}
+#cs-main-navigation .cs-main-navigation > li > a span:after {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "FontAwesome";
+    content: "\f0d7";
+    padding-left: 5px;
+    font-size: 10px;
+    color: #ccc;
+    font-style: normal;
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu li a span:after {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "FontAwesome";
+    content: "\f0da";
+    padding-left: 5px;
+    font-size: 10px;
+    color: #fff;
+    font-style: normal;
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-width: 220px
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu li {
+    position: relative;
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu li a {
+    color: #fff;
+    display: block;
+    padding: 6px 12px
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu > li.current-menu-item > a,
+#cs-main-navigation .cs-main-navigation ul.sub-menu li:hover > a {
+    background-color: rgba(0,0,0,0.15)
+}
+#cs-main-navigation .cs-main-navigation li:hover > ul.sub-menu {
+    display: block
+}
+#cs-main-navigation .cs-main-navigation ul.sub-menu ul.sub-menu {
+    left: 100%;
+    top: 0
+}
+.cs-toggle-main-navigation {
+    display: none;
+}
+
+/*------------------------------------------------------------------
+    Pages
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Under construction
+-------------------------------------------------------------------*/
+.cs-countdown-block {
+    margin: 0 20px
+}
+.cs-countdown-number {
+    font-size: 60px;
+    line-height: 40px
+}
+
+/*------------------------------------------------------------------
+    Home slider
+-------------------------------------------------------------------*/
+.cs-home-slider .cs-slider-caption {
+    padding: 15px 30px 17px 30px
+}
+.cs-home-slider .cs-slider-caption h2 {
+    font-size: 22px;
+    line-height: 42px;
+}
+.cs-home-slider .cs-slider-caption p {
+    margin-top: 10px
+}
